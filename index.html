@@ -1,0 +1,17 @@
+---
+layout: page
+title: Index Page
+---
+
+{% include site-search.html %}
+
+<hr>
+
+<h2> Welcome to the Index </h2>
+Here you will be able to navigate the site. Here are the current posts: <br>
+
+{% for post in site.posts %}
+	<a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a> <br>
+{% endfor %}
+
+<hr>

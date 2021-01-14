@@ -13,9 +13,11 @@ feature_text: |
 
 <hr>
 
-<h2> Subsystems:</h2>
+<h2 style="text-decoration: underline; text-align: center"> Subsystems </h2>
 
+<center>
 {% for sub in site.data.subsystem  %}
 	{% capture my_url %} {{ site.baseurl }}{{ sub.url }} {% endcapture %}
 	{% include button.html text=sub.name link=my_url %}
 {% endfor %}
+</center>

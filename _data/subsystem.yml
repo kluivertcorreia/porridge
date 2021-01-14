@@ -1,0 +1,11 @@
+- name: Electrical
+  description: does electrical work
+  url: /elec_idx.html
+
+- name: Mechanical
+  description: does mechanical work
+  url: /mech_idx.html
+
+- name: AI
+  description: does AI related work
+  url: /ai_idx.html

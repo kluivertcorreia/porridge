@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Index Page
+title: Home Page
 feature_image: assets/wallpaper.jpg
 feature_text: |
  <hr>
@@ -13,11 +13,11 @@ feature_text: |
 
 <hr>
 
-<h2> Welcome to the Index </h2>
-Here you will be able to navigate the site. Here are the current posts: <br>
+<h2 style="text-decoration: underline; text-align: center"> Subsystems </h2>
 
-{% for post in site.posts %}
-	<a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a> <br>
+<center>
+{% for sub in site.data.subsystem  %}
+	{% capture my_url %} {{ site.baseurl }}{{ sub.url }} {% endcapture %}
+	{% include button.html text=sub.name link=my_url %}
 {% endfor %}
-
-<hr>
+</center>

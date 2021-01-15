@@ -31,7 +31,7 @@ github_username:  jekyll
 
 # Build settings
 logo: /assets/group_logo.png
-remote_theme: daviddarnes/alembic
+remote_theme: daviddarnes/alembic@main
 plugins:
   - jekyll-feed
   - jekyll-remote-theme

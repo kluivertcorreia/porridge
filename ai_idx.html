@@ -3,3 +3,18 @@ layout: page
 title: AI
 ---
 
+{% assign docs = '' | split: '' %}
+
+{% for post in site.ai %}
+	
+	{% assign holder = post.url | split: ' ' %}
+	{% assign docs = docs | concat: holder %}
+
+{% endfor %}
+
+Number of posts: {{ docs.size }} <br>
+<strong>Index:</strong> <br>
+
+{% for part in docs %}
+	{{ part }} <br>
+{% endfor %}

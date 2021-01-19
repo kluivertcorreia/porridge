@@ -12,9 +12,17 @@ title: AI
 
 {% endfor %}
 
-Number of posts: {{ docs.size }} <br>
+<strong>Number of posts:</strong> {{ docs.size }} <br>
 <strong>Index:</strong> <br>
 
 {% for part in docs %}
 	{{ part }} <br>
 {% endfor %}
+
+<strong> Tree: </strong><br>
+
+<p id=1></p>
+<script>
+	let message = "Welcome to Bruhmation!";
+	document.getElementById(1).innerHTML = message;
+</script>

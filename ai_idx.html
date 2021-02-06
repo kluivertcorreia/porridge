@@ -3,26 +3,3 @@ layout: page
 title: AI
 ---
 
-{% assign docs = '' | split: '' %}
-
-{% for post in site.ai %}
-	
-	{% assign holder = post.url | split: ' ' %}
-	{% assign docs = docs | concat: holder %}
-
-{% endfor %}
-
-<strong>Number of posts:</strong> {{ docs.size }} <br>
-<strong>Index:</strong> <br>
-
-{% for part in docs %}
-	{{ part }} <br>
-{% endfor %}
-
-<strong> Tree: </strong><br>
-
-<p id=1></p>
-<script>
-	let message = "Welcome to Bruhmation!";
-	document.getElementById(1).innerHTML = message;
-</script>
